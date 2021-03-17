@@ -1,7 +1,10 @@
+import SearchArea from "./components/SearchArea.js";
+import React from "react";
+
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header"></header>
+			<SearchArea />
 		</div>
 	);
 }
