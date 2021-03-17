@@ -3,9 +3,14 @@ import React from "react";
 function GroceryItem({ grocery, groceries, setGroceries, basketList, setBasketList }) {
 	const moveToBasketList = () => {
 		const basketListCopy = [...basketList];
-		basketListCopy.push(grocery);
+		const foundItemInBasketList = basketListCopy.find((basketItem) => basketItem.item === grocery);
+
+		if (foundItemInBasketList) {
+			foundItemInBasketList.amount++;
+		} else {
+			basketListCopy.push({ item: grocery, amount: 0 });
+		}
 		setBasketList(basketListCopy);
-		setGroceries(groceries.filter((currentGrocery) => currentGrocery !== grocery));
 	};
 
 	return (
