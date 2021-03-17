@@ -13,6 +13,9 @@ function BasketList({ basketList, setBasketList }) {
 					setBasketList={setBasketList}
 				/>
 			))}
+			<button id="remove-all-button" onClick={() => setBasketList([])}>
+				Remove All
+			</button>
 		</div>
 	);
 }

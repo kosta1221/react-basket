@@ -17,6 +17,10 @@ h1 {
 	font-size: 7vmax;
 }
 
+button:hover {
+	cursor: pointer;
+}
+
 .grocery-and-basket-lists {
 	display: flex;
 	justify-content: space-around;
@@ -40,4 +44,12 @@ h1 {
 	background-color: aliceblue;
 	display: block;
 	text-align: center;
+}
+
+#remove-all-button {
+	width: 90%;
+	margin-top: 1vh;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 }

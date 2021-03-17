@@ -16,7 +16,7 @@ function GroceryItem({ grocery, groceries, setGroceries, basketList, setBasketLi
 	return (
 		<div>
 			<button onClick={moveToBasketList}>Add</button>
-			<span>{grocery}</span>
+			<span>{` ${grocery}`}</span>
 		</div>
 	);
 }

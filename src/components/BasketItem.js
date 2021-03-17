@@ -8,7 +8,7 @@ function BasketItem({ basketItem, basketList, setBasketList }) {
 	return (
 		<div>
 			<button onClick={removeFromBasketList}>Remove</button>
-			<span>{`${basketItem.amount} ${basketItem.item}`}</span>
+			<span>{` ${basketItem.amount} ${basketItem.item}`}</span>
 		</div>
 	);
 }
