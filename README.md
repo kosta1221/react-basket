@@ -1,2 +1,3 @@
 # react-basket
- A shopping basket reawct exercise
+
+A shopping basket react exercise
