@@ -1,0 +1,43 @@
+body {
+	background: powderblue;
+}
+
+header {
+	background-color: black;
+	overflow: auto;
+	display: flex;
+	align-items: center;
+}
+
+header > * {
+	margin: 5vh auto;
+}
+
+h1 {
+	font-size: 7vmax;
+}
+
+.grocery-and-basket-lists {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin-top: -3vh;
+}
+
+#search-input {
+	width: 40vw;
+	margin: auto;
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#search-div {
+	position: relative;
+	width: 60vw;
+	height: 60px;
+	background-color: aliceblue;
+	display: block;
+	text-align: center;
+}

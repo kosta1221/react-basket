@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import GroceriesList from "./GroceriesList.js";
 import BasketList from "./BasketList";
+import "../styles/SearchArea.css";
 
 function SearchArea() {
 	const groceriesArray = [
@@ -31,14 +32,22 @@ function SearchArea() {
 
 	return (
 		<div>
-			<input />
-			<GroceriesList
-				groceries={groceries}
-				setGroceries={setGroceries}
-				basketList={basketList}
-				setBasketList={setBasketList}
-			/>
-			<BasketList basketList={basketList} setBasketList={setBasketList} />
+			<header>
+				<h1>🔥</h1>
+				<div id="search-div">
+					<input id="search-input" />
+				</div>
+				<h1>🛒</h1>
+			</header>
+			<div className="grocery-and-basket-lists">
+				<GroceriesList
+					groceries={groceries}
+					setGroceries={setGroceries}
+					basketList={basketList}
+					setBasketList={setBasketList}
+				/>
+				<BasketList basketList={basketList} setBasketList={setBasketList} />
+			</div>
 		</div>
 	);
 }
